@@ -38,11 +38,11 @@ services:
 
   db:
     hostname: postgres
-    image: bitnami/postgresql
+    image: bitnami/postgresql:13.3.0
     environment:
       POSTGRES_PASSWORD: password
     volumes:
-      - data:/bitnami/postgresql
+      - data1:/bitnami/postgresql
       #- ./sql:/tmp
     ports:
       - 32432:5432
